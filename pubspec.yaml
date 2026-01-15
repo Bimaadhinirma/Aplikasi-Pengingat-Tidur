@@ -1,0 +1,45 @@
+name: aplikasi_pengingat_tidur
+description: "Aplikasi pengingat tidur dengan fitur full-screen alarm overlay."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Alarm & notifications
+  alarm: ^4.1.0
+  flutter_local_notifications: ^19.0.0
+
+  # Storage
+  shared_preferences: ^2.2.0
+
+  # UI utilities
+  wakelock_plus: ^1.1.0
+  google_fonts: ^6.2.0
+  
+  # System overlay window
+  flutter_overlay_window: ^0.4.5
+  android_alarm_manager_plus: ^5.0.0
+  android_intent_plus: ^6.0.0
+  permission_handler: ^12.0.1
+  sqflite: ^2.4.2
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+    - assets/logo/
